@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import {Header, Image, Segment, Container} from 'semantic-ui-react';
-import SV1 from './components/images/SV1.jpg'
 import LetterToReaders from './components/LetterToReaders'
 
 function App() {
@@ -13,7 +12,9 @@ function App() {
         </Header>
         </div>
      <LetterToReaders />
-
+      <footer className="page-footer">
+        site created with great ❤️ by <a target="_blank" href="https://meganjones.dev">Megan Jones</a>
+      </footer>
      </Container>
   );
 }
