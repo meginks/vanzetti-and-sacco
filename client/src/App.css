@@ -1,0 +1,84 @@
+:root {
+ --armband-pink: #e8866a; 
+ --raleway-font: 'Raleway', sans-serif;
+ --gv-font: 'Great Vibes', cursive;
+}
+
+html,
+body{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #072d3d;
+}
+
+.ui .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.heading-name {
+    font-family: 'Tangerine', cursive;
+    font-size: 4rem;
+    text-align: center;
+    margin: 1rem;
+    padding-top: 1rem;
+    color: #fff;
+}
+
+.signature {
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.photo {
+  border-radius: 5%;
+  text-align: center;
+  margin: 2rem;
+  border: 15px solid #eaeaea;
+  box-shadow: 2.5px 5px #888888;
+
+} 
+
+.ui .segment {
+    box-shadow: 5px 10px #000;
+}
+
+.flex-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.letter {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+} 
+
+.main-text {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-family: 'Handlee', sans-serif
+} 
+
+.page-footer {
+    color: #eaeaea;
+    text-align: center; 
+    font-family: 'Handlee', sans-serif; 
+    font-size: 1rem; 
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+} 
+
+.page-footer a {
+        color: var(--armband-pink);
+}
