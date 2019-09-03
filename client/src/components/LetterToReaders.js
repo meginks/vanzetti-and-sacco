@@ -1,9 +1,14 @@
 import React from 'react'; 
+import Nav from './Nav';
+import Footer from './Footer';
 import SV1 from './images/SV1.jpg'
 import {Segment, Container, Image} from 'semantic-ui-react';
 
 const LetterToReaders = () => {
     return (
+        <div>
+             <Nav />
+       
         <Container className="letter">
             <Segment>
             <div className="flex-container">
@@ -79,6 +84,8 @@ Megan Jones
 </div> 
             </Segment>
         </Container>
+        <Footer />
+        </div>
     )
 }
 

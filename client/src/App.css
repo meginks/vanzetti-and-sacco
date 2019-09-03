@@ -9,24 +9,64 @@ body{
   height: 100%;
   width: 100%;
   position: absolute;
-  background-color: #072d3d;
+  background-color: #ded5d5;
 }
 
 .ui .header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+
+
+.menu-container {
+    margin: 10px;
+    box-shadow: 2.5px 5px #080808;
+}
+
+
+.menu-button {
+    color: 	#080808;
+    font-family: 'Handlee', cursive;
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+} 
+
+
+@media screen and (max-width: 750px) {
+    .menu-button {
+        padding-top: 0;
+        text-align: center;
+    } 
 }
 
 
 .heading-name {
     font-family: 'Tangerine', cursive;
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-align: center;
     margin: 1rem;
     padding-top: 1rem;
-    color: #fff;
+    color: 	#080808;
+    display: block;
+} 
+
+@media screen and (max-width: 750px) {
+    .heading-name {
+        margin-left: 3rem;
+        padding-left: 3rem;
+    }
 }
+
+@media screen and (max-width: 475px) {
+    .heading-name {
+        font-size: 3rem;
+        margin-left: 1rem;
+        padding-left: 1rem;
+    }
+}
+
 
 .signature {
     font-family: 'Great Vibes', cursive;
@@ -38,13 +78,12 @@ body{
   border-radius: 5%;
   text-align: center;
   margin: 2rem;
-  border: 15px solid #eaeaea;
-  box-shadow: 2.5px 5px #888888;
-
+  border: 15px solid #f5f2f2;
+  box-shadow: 2.5px 5px #080808;
 } 
 
 .ui .segment {
-    box-shadow: 5px 10px #000;
+    box-shadow: 5px 10px 	#080808;
 }
 
 .flex-container {
@@ -54,7 +93,6 @@ body{
     align-items: center;
     justify-content: center;
 }
-
 
 .letter {
     margin: 3rem;
@@ -66,19 +104,43 @@ body{
     margin: 3rem;
     display: flex;
     flex-direction: column;
-    font-size: 1.5rem;
-    font-family: 'Handlee', sans-serif
+    font-size: 1.25rem;
+    font-family: 'Raleway', sans-serif;
 } 
 
+.welcome-message {
+    font-family: 'Tangerine', cursive;
+    font-size: 5rem;
+    text-align: center; 
+}
+
+.gallery-header {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+}
+
+.gallery-artist {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+}
+
+.subheader {
+    font-family: 'Handlee', cursive;
+    font-size: 1.5rem;
+    text-align: center; 
+    margin-top: -20px;
+}
+
 .page-footer {
-    color: #eaeaea;
+    color: 	#080808;
     text-align: center; 
     font-family: 'Handlee', sans-serif; 
-    font-size: 1rem; 
+    font-size: 1.25rem;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
+    font-weight: bold;
 } 
 
 .page-footer a {
-        color: var(--armband-pink);
+    color: var(--armband-pink);
 }

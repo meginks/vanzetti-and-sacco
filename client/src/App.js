@@ -1,21 +1,20 @@
 import React from 'react';
 import './App.css';
 import {Header, Image, Segment, Container} from 'semantic-ui-react';
-import LetterToReaders from './components/LetterToReaders'
+import {Route} from 'react-router-dom';
+import Home from './components/Home';
+import LetterToReaders from './components/LetterToReaders';
+import GalleryHome from './components/gallery/GalleryHome';
+import Nav from './components/Nav';
 
 function App() {
   return (
-      <Container>
-        <div className="heading-name">
-        <Header>
-         <h1 className="heading-name">Vanzetti and Sacco</h1>      
-        </Header>
-        </div>
-     <LetterToReaders />
-      <footer className="page-footer">
-        site created with great ❤️ by <a target="_blank" href="https://meganjones.dev">Megan Jones</a>
-      </footer>
-     </Container>
+      <div>
+  
+     <Route exact path="/aboutsite" component={LetterToReaders} /> 
+     <Route exact path="/" component={Home} />
+     <Route exact path="/gallery" component={GalleryHome} />
+     </div>
   );
 }
 
