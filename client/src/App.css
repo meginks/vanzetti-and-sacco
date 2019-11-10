@@ -9,7 +9,8 @@ body{
   height: 100%;
   width: 100%;
   position: absolute;
-  background-color: #ded5d5;
+  background-color: #786b7d;
+  /* background-color: #ded5d5; */
 }
 
 .ui .header {
@@ -19,54 +20,30 @@ body{
     justify-content: center;
 } 
 
-
-.menu-container {
-    margin: 10px;
-    box-shadow: 2.5px 5px #080808;
+.navbar {
+    display: flex; 
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%; 
+    margin-top: 1rem;
+    align-items: left;
+    justify-content: left;
 }
 
-
-.menu-button {
-    color: 	#080808;
-    font-family: 'Handlee', cursive;
-    font-size: 1.5rem;
-    padding-top: 1.5rem;
-} 
-
-
-@media screen and (max-width: 750px) {
-    .menu-button {
-        padding-top: 0;
-        text-align: center;
-    } 
+.home-container {
+    height: 100%;
+    width: 100%;
 }
 
 
 .heading-name {
-    font-family: 'Tangerine', cursive;
-    font-size: 3.5rem;
+    font-family: 'Playfair Display SC', serif;
     text-align: center;
-    margin: 1rem;
+    color: #f5f2f2;
+    margin-top: 1rem; 
     padding-top: 1rem;
-    color: 	#080808;
-    display: block;
+    font-size: 3rem;
 } 
-
-@media screen and (max-width: 750px) {
-    .heading-name {
-        margin-left: 3rem;
-        padding-left: 3rem;
-    }
-}
-
-@media screen and (max-width: 475px) {
-    .heading-name {
-        font-size: 3rem;
-        margin-left: 1rem;
-        padding-left: 1rem;
-    }
-}
-
 
 .signature {
     font-family: 'Great Vibes', cursive;
@@ -106,7 +83,14 @@ body{
     flex-direction: column;
     font-size: 1.25rem;
     font-family: 'Raleway', sans-serif;
-} 
+}  
+
+.megan:hover {
+    color:black;
+}
+.centered {
+    text-align: center;
+}
 
 .welcome-message {
     font-family: 'Tangerine', cursive;
@@ -143,4 +127,5 @@ body{
 
 .page-footer a {
     color: var(--armband-pink);
+    text-decoration: underline;
 }

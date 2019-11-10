@@ -13,11 +13,10 @@ function GalleryHome() {
       <Container className="letter">
           <Segment>
               <h1 className="welcome-message">Gallery</h1>
-              <p className="main-text">
-                If you have art or video you wish to submit, please email <a href="mailto:meganjones.dev@gmail.com">Megan.</a>
+              <p className="main-text centered">
+              Coming Soon. <br></br> If you have art or video you wish to submit, please email <a href="mailto:meganjones.dev@gmail.com">Megan.</a>
               </p>
-          </Segment>
-          <Card.Group>
+          {/* <Card.Group>
               <Card>
                 <Image src={MarcShanker1} alt="drawing of Sacco and Vanzetti" /> 
                 <Card.Content>
@@ -60,7 +59,8 @@ function GalleryHome() {
                 </Card.Description>
                 </Card.Content>
               </Card>
-          </Card.Group>
+          </Card.Group> */}
+          </Segment>
      </Container>
      <Footer />
      </div>

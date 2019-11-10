@@ -10,11 +10,10 @@ import Nav from './components/Nav';
 function App() {
   return (
       <div>
-  
-     <Route exact path="/aboutsite" component={LetterToReaders} /> 
-     <Route exact path="/" component={Home} />
-     <Route exact path="/gallery" component={GalleryHome} />
-     </div>
+    <Route exact path="/aboutsite" component={LetterToReaders} /> 
+    <Route exact path="/" component={Home} />
+    <Route exact path="/gallery" component={GalleryHome} />
+    </div>
   );
 }
 

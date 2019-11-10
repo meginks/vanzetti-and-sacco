@@ -7,15 +7,15 @@ import {Segment, Container, Image} from 'semantic-ui-react';
 const LetterToReaders = () => {
     return (
         <div>
-             <Nav />
-       
+        <Nav />
+
         <Container className="letter">
             <Segment>
             <div className="flex-container">
             <Image  className="photo" src={SV1} alt="Sacco and Vanzetti" size="medium"/> 
             </div>
-               <div className="letter-date main-text">
-               <em>August 23, 2019— the 92nd anniversary of Sacco and Vanzetti's executions</em> 
+            <div className="letter-date main-text">
+            <em>August 23, 2019— the 92nd anniversary of Sacco and Vanzetti's executions</em> 
             </div>
             <p className="main-text">
 Dear comrades and visitors to the site, 
