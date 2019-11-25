@@ -1,1 +1,0 @@
-// this will be for the component about the compiler / creator of the site / editor 

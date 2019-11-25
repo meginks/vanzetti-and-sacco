@@ -6,7 +6,7 @@ import Footer from './Footer';
 
 function Home() {
   return (
-      <div className="home-container">
+      <div>
         <Nav />
       <Container className="letter">
         {/* <div className="flex-container">

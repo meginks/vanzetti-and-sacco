@@ -1,1 +1,0 @@
-// Thanks to those who made this app possible

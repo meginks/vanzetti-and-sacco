@@ -1,1 +1,0 @@
-// this is for the site statement of purpose

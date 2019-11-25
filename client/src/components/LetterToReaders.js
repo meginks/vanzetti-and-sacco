@@ -8,7 +8,7 @@ const LetterToReaders = () => {
     return (
         <div>
         <Nav />
-
+        <h1 className="welcome-message">About</h1>
         <Container className="letter">
             <Segment>
             <div className="flex-container">

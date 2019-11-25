@@ -27,13 +27,31 @@ body{
     margin-right: 5%; 
     margin-top: 1rem;
     align-items: left;
-    justify-content: left;
+    justify-content: left; 
 }
-
 .home-container {
     height: 100%;
     width: 100%;
 }
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column; 
+    } 
+
+    .ui.button, .ui.buttons .button, .ui.buttons .or {
+        margin: 1rem;
+    }
+
+    .home-container {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+
 
 
 .heading-name {
@@ -93,19 +111,30 @@ body{
 }
 
 .welcome-message {
-    font-family: 'Tangerine', cursive;
-    font-size: 5rem;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 2rem;
     text-align: center; 
+    color: #f5f2f2;
 }
 
 .gallery-header {
     font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
+    padding-top: 1rem;
 }
 
 .gallery-artist {
     font-family: 'Raleway', sans-serif;
     font-size: 1.2rem;
+}
+
+.ui .card {
+    border: 15px solid #f5f2f2;
+    box-shadow: 2.5px 5px #080808;
+} 
+
+.ui .cards {
+    padding: 2rem;
 }
 
 .subheader {
