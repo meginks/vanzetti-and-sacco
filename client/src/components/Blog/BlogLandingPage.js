@@ -10,7 +10,7 @@ function BlogHome() {
         <div>
             <Nav /> 
             <Container>
-                Coming soon.
+            <h1 className="coming-soon">Blog coming soon.</h1>
             </Container>
             <Footer />
         </div>

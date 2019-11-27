@@ -11,9 +11,9 @@ const Nav = () => {
             <Button as={Link} to="/">Home</Button>
             <Button as={Link} to="/aboutsite">About</Button>
             <Button as={Link} to="/gallery">Gallery</Button>
-            <Button as={Link} to="/">Blog</Button>
-            <Button as={Link} to="/">Resources</Button> 
-            <Button as={Link} to="/">Letters</Button>
+            <Button as={Link} to="/blog">Blog</Button>
+            <Button as={Link} to="/resources">Resources</Button> 
+            <Button as={Link} to="/letters">Letters</Button>
           </nav>
         </div>
         <h1 class="heading-name">Vanzetti and Sacco</h1> 

@@ -137,6 +137,13 @@ body{
     padding: 2rem;
 }
 
+.coming-soon {
+    color: #f5f2f2; 
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
 .subheader {
     font-family: 'Handlee', cursive;
     font-size: 1.5rem;

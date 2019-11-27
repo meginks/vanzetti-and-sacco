@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container, Header, Image, Card, Segment} from 'semantic-ui-react';
-import Nav from './../Nav';
-import Footer from './../Footer';
+import Nav from './Nav';
+import Footer from './Footer';
 
 function ResourcesHome() { 
 
@@ -9,7 +9,7 @@ function ResourcesHome() {
         <div>
             <Nav /> 
             <Container>
-                Coming soon.
+                <h1 className="coming-soon">More resources coming soon.</h1>
             </Container>
             <Footer />
         </div>
