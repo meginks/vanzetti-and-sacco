@@ -16,4 +16,4 @@ function ResourcesHome() {
     )
  }
 
-export default LettersHome;
+export default ResourcesHome;
