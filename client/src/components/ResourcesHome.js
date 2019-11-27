@@ -1,10 +1,9 @@
-// Landing page for Incremental Blog About S&V 
 import React from 'react';
 import {Container, Header, Image, Card, Segment} from 'semantic-ui-react';
 import Nav from './../Nav';
 import Footer from './../Footer';
 
-function BlogHome() { 
+function ResourcesHome() { 
 
     return (
         <div>
@@ -17,4 +16,4 @@ function BlogHome() {
     )
  }
 
-export default BlogHome;
+export default LettersHome;
