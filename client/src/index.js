@@ -9,7 +9,7 @@ import { BrowserRouter as Router, withRouter } from 'react-router-dom';
 
 const AppWithRouter = withRouter(App);
 ReactDOM.render(
-<Router>
+<Router baseurl="/index.html">
 <AppWithRouter />
 </Router>
 , document.getElementById('root'));
