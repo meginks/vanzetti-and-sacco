@@ -16,7 +16,7 @@ function App() {
   return (
       <div>
     <Route exact path="/aboutsite" component={About} /> 
-    <Route exact path="/" component={Landing} />
+    <Route path="/" component={Landing} />
     <Route exact path="/letters" component={LettersHome} /> 
     <Route exact path="/resources" component={ResourcesHome} /> 
     <Route exact path="/library" component={SaccoVanzettiLibrary} /> 

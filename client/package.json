@@ -7,7 +7,7 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-router": "^5.0.1",
-    "react-router-dom": "^5.0.1",
+    "react-router-dom": "^5.3.4",
     "react-scripts": "^5.0.1",
     "semantic-ui-react": "^0.88.0",
     "yarn": "^1.22.22"
@@ -24,6 +24,7 @@
       "not dead",
       "not op_mini all"
     ],
+    "homepage": "http://vanzettiandsacco.com/",
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
