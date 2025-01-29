@@ -1,7 +1,5 @@
 
 import React, { useState } from 'react';
-import {Container, Header, Image, Card, Segment} from 'semantic-ui-react';
-import { Search, Book, Music, Palette, ExternalLink, Video, Users } from 'lucide-react';
 import marc_shanker1 from './images/marc_shanker/fullsizeoutput_1e5.jpeg';
 import marc_shanker2 from './images/marc_shanker/fullsizeoutput_69.jpeg'; 
 import marc_shanker3 from './images/marc_shanker/fullsizeoutput_922.jpeg';
@@ -190,7 +188,7 @@ const SaccoVanzettiLibrary = () => {
         image: marc_shanker3,
         access: [
             {
-                label: "Find on Marc Shanker\'s website", 
+                label: "Find on Marc Shanker's website", 
                 url: "http://www.marcshanker.com"
             }
         ]
@@ -205,7 +203,7 @@ const SaccoVanzettiLibrary = () => {
         image: marc_shanker2,
         access: [
             {
-                label: "Find on Marc Shanker\'s website", 
+                label: "Find on Marc Shanker's website", 
                 url: "http://www.marcshanker.com"
             }
         ]
@@ -220,7 +218,7 @@ const SaccoVanzettiLibrary = () => {
         image: marc_shanker1,
         access: [
             {
-                label: "Find on Marc Shanker\'s website", 
+                label: "Find on Marc Shanker's website", 
                 url: "http://www.marcshanker.com"
             }
         ]
@@ -331,7 +329,7 @@ const SaccoVanzettiLibrary = () => {
                   <span className="font-semibold">Year:</span> {work.year}
                 </p>
               </div> 
-              <Image src={work.image}/> 
+              <img alt='preview of work' src={work.image}/> 
               <p className="work-description">{work.description}</p>
               <p className="work-significance">{work.significance}</p>
               <div className="access-links">

@@ -1,17 +1,24 @@
 import React from 'react';
-import {Menu, Button} from 'semantic-ui-react';
-import {Link} from 'react-router-dom';
+import Button from './Button.js';
+import {useNavigate } from 'react-router-dom';
 
 
-const Nav = () => {
+const Nav = () => { 
+
+  const navigate = useNavigate(); 
+  const goToHome = () => { navigate('/')}; 
+  const goToAbout = () => { navigate('/aboutsite')}; 
+  const goToLibrary = () => { navigate('/library')}; 
+  const goToResources = () => { navigate('/resources')}; 
+  const goToLetters = () => {navigate('/letters')};
     return (
       <div>
           <nav class="navbar">
-            <Button as={Link} to="/">Home</Button>
-            <Button as={Link} to="/aboutsite">About</Button>
-            <Button as={Link} to="/library">Library</Button> 
-            <Button as={Link} to="/resources">Resources</Button>
-            <Button as={Link} to="/letters">Letters</Button>
+            <Button onClick={goToHome}>Home</Button>
+            <Button onClick={goToAbout}>About</Button>
+            <Button onClick={goToLibrary}>Library</Button> 
+            <Button onClick={goToResources}>Resources</Button>
+            <Button onClick={goToLetters}>Letters</Button>
           </nav>
         </div>
   
