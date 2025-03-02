@@ -11,8 +11,6 @@ import ResourcesHome from './routes/ResourcesHome'
 import SaccoVanzettiLibrary from './routes/SaccoVanzettiLibrary'
 import './index.css'
 
-
-console.log('React available:', !!React);
 const router = createHashRouter([
   {
     path: '/',
