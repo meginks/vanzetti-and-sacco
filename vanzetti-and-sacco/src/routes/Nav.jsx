@@ -12,8 +12,8 @@ const Nav = () => {
   const goToResources = () => { navigate('/resources')}; 
   const goToLetters = () => {navigate('/letters')};
     return (
-      <div>
-          <nav className="navbar">
+      <div className="main-nav">
+          <nav >
             <Button onClick={goToHome}>Home</Button>
             <Button onClick={goToAbout}>About</Button>
             <Button onClick={goToLibrary}>Library</Button> 
