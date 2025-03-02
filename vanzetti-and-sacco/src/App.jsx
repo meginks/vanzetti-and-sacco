@@ -1,9 +1,9 @@
 // App.jsx
-import { Link, Outlet } from 'react-router-dom' 
-import Nav from './routes/Nav.jsx'; 
+import { Outlet } from 'react-router-dom' 
 import'./App.css'
 
-function App() {
+function App() { 
+  console.log("ciao")
   return (
     <div>
       <header>
@@ -12,7 +12,8 @@ function App() {
         <Outlet />
         </main> 
         <footer>
-        </footer>
+        </footer> 
+
     </div>
   )
 }
