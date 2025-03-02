@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: { 
     assetsDir: 'assets',
-    base: './',
+    base: '/',
     outDir: 'dist',
     // Explicitly include react-router-dom in the bundle
     rollupOptions: {

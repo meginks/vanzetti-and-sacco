@@ -1,9 +1,20 @@
 [[headers]]
-  for = "/*.js"
+  for = "/*.(js|mjs|cjs|jsx)"
   [headers.values]
     Content-Type = "application/javascript"
 
 [[headers]]
-  for = "/*.mjs"
+  for = "/*.css"
   [headers.values]
-    Content-Type = "application/javascript"
+    Content-Type = "text/css"
+
+[[headers]]
+  for = "/*.(json|map)"
+  [headers.values]
+    Content-Type = "application/json" 
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200 
+  
