@@ -1,15 +1,20 @@
-# Create a netlify.toml file in your project root
+[[headers]]
+  for = "/*.(js|mjs|cjs|jsx)"
+  [headers.values]
+    Content-Type = "application/javascript"
 
-[build]
- 
-base = "/vanzetti-and-sacco"  # Update this if your project is in a subdirectory
-  
-# Directory that contains the deploy-ready HTML files and assets
-publish = "dist"  # This should match Vite's build output directory
-  
-Default build command
-command = "npm run build"
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Content-Type = "text/css"
 
-# If you need environment variables
-[build.environment]
-NODE_VERSION = "18"  # Specify Node version
+[[headers]]
+  for = "/*.(json|map)"
+  [headers.values]
+    Content-Type = "application/json" 
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200 
+  

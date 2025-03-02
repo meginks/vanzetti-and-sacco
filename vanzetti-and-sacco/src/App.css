@@ -342,8 +342,6 @@
     margin: 5px;
   }
 
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
-
 .sacco-vanzetti-library {
   background-color: rgb(229, 229, 229);
   font-family: 'Playfair Display', serif;
@@ -558,7 +556,3 @@
     padding: 0.4rem 0.8rem;
   }
 } 
-
-.navbar {
-  
-}
