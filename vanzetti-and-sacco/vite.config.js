@@ -4,7 +4,9 @@ import react from '@vitejs/plugin-react'
 // vite.config.js
 export default defineConfig({
   plugins: [react()],
-  build: {
+  build: { 
+    assetsDir: 'assets',
+    base: './',
     outDir: 'dist',
     // Explicitly include react-router-dom in the bundle
     rollupOptions: {
