@@ -5,13 +5,12 @@ import marc_shanker2 from '../images/marc_shanker/fullsizeoutput_69.jpeg';
 import marc_shanker3 from '../images/marc_shanker/fullsizeoutput_922.jpeg';
 import Header from './Header';
 import Footer from './Footer';
-import SV1 from '../images/SV1.jpg';
 
 const SaccoVanzettiLibrary = () => {
   const [filter, setFilter] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
   const works = [
-    {
+    {   
         title: "Gods of the Lightning",
         creator: "Maxwell Anderson and Harold Hickerson",
         year: 1928,
@@ -252,7 +251,8 @@ const SaccoVanzettiLibrary = () => {
 
   return ( 
     <div>
-    <Header/>
+    <Header/> 
+    <div>
     <div className="sacco-vanzetti-library">
       <div className="library-header">
         <h1 className="library-title">Works Inspired by Sacco and Vanzetti</h1>
@@ -271,7 +271,7 @@ const SaccoVanzettiLibrary = () => {
             className="search-input"
             onChange={(e) => setSearchTerm(e.target.value)}
           />
-        </div>
+        </div> 
         
         <div className="filter-buttons">
           {['all', 'literature', 'poetry', 'theater', 'music', 'art', 'film'].map((category) => (
@@ -329,6 +329,7 @@ const SaccoVanzettiLibrary = () => {
       </div>
     </div> 
     <Footer />
+    </div> 
     </div>
   );
 };

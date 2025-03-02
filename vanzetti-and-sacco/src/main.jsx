@@ -1,18 +1,19 @@
 // main.jsx
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 import App from './App'
 import ErrorPage from './ErrorPage'
 import About from './routes/About'
 import Landing from './routes/Landing' 
 import LettersHome from './routes/LettersHome' 
 import ResourcesHome from './routes/ResourcesHome' 
-import LetterToReaders from './routes/LetterToReaders' 
 import SaccoVanzettiLibrary from './routes/SaccoVanzettiLibrary'
 import './index.css'
 
-const router = createBrowserRouter([
+
+console.log('React available:', !!React);
+const router = createHashRouter([
   {
     path: '/',
     element: <App />,
