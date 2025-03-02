@@ -21,7 +21,7 @@
   
   /* Layout */
   .memorial-site {
-    min-height: 100vh;
+    min-height: 30vh;
   }
   
   /* Hero Section */
@@ -30,7 +30,19 @@
     height: 50vh;
     background-color: var(--color-dark);
     overflow: hidden;
-  }
+  } 
+
+    
+  @media (max-width: 480px) {
+
+    /* Styles for average phone screens */ 
+
+    .hero {
+      height: 100vh;
+    } 
+  } 
+
+
   
   .hero__background {
     position: absolute;
@@ -89,27 +101,40 @@
   
   /* Navigation */
   .main-nav {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1rem;
     position: sticky;
     top: 0;
-    z-index: 30;
+    z-index: 30; 
+    font-size: 30px; 
     background-color: var(--color-dark);
     border-top: 1px solid rgb(38, 38, 38);
     border-bottom: 1px solid rgb(38, 38, 38);
-    padding: 1rem 0;
+  } 
+
+  .btn {
+    background-color:  rgb(229, 229, 229);
+    height: 2rem; 
+    width: 10rem;
+    font-size: 16px; 
+    font-weight: bold;
+    margin: 1px;
   }
   
-  .nav-container {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
-  
-  .nav-links {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-  }
-  
+  @media (max-width: 480px) {
+
+    /* Styles for average phone screens */ 
+
+    .main-nav nav {
+      display: flex; 
+      flex-direction: column; 
+      justify-content: center; 
+      align-items: center;
+    } 
+  } 
+
+
   .nav-link {
     background: none;
     border: none;
@@ -323,9 +348,9 @@
   background-color: rgb(229, 229, 229);
   font-family: 'Playfair Display', serif;
   padding: 2rem;
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
-}
+} 
 
 /* Header Styles */
 .library-header {
@@ -414,6 +439,12 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
   padding: 1rem;
+  margin: 2rem;
+} 
+
+.library-img {
+  max-width: 100%; 
+  height: auto;
 }
 
 /* Card Styles */
@@ -526,4 +557,8 @@
     font-size: 0.75rem;
     padding: 0.4rem 0.8rem;
   }
+} 
+
+.navbar {
+  
 }

@@ -1,15 +1,13 @@
 import React from 'react'; 
-import Footer from './Footer';
-import SV1 from './images/SV1.jpg'
-import {Segment, Container, Image} from 'semantic-ui-react';
+import SV1 from '../images/SV1.jpg';
 
 const LetterToReaders = () => {
     return (
         <div>
-        <Container className="letter">
-            <Segment>
+        <main className="letter">
+            <div>
             <div className="flex-container">
-            <Image  className="photo" src={SV1} alt="Sacco and Vanzetti" size="medium"/> 
+            <img className="photo" src={SV1} alt="Sacco and Vanzetti" size="medium"/> 
             </div>
             <div className="letter-date main-conten
         t">
@@ -80,8 +78,8 @@ So with that dear comrades and friends, be of good heart and carry on.
 Megan Jones 
 </h2>
 </div> 
-            </Segment>
-        </Container>
+            </div>
+        </main>
         </div>
     )
 }
