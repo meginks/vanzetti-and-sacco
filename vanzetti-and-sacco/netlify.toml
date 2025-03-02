@@ -1,6 +1,7 @@
 # example netlify.toml
 [build]
-  command = "npm run build"
+  base = "vanzetti-and-sacco"
+  command = "npm install && npm run build"
   functions = "netlify/functions"
   publish = "dist"
 
@@ -9,4 +10,8 @@
   [[redirects]]
    from = "/*"
    to = "/index.html"
-   status = 200
+   status = 200 
+
+# Environment variables if needed
+[build.environment]
+  NODE_VERSION = "18"
