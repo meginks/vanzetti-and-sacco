@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './Button.js';
+import Button from '../assets/Button.jsx';
 import {useNavigate } from 'react-router-dom';
 
 
@@ -7,7 +7,7 @@ const Nav = () => {
 
   const navigate = useNavigate(); 
   const goToHome = () => { navigate('/')}; 
-  const goToAbout = () => { navigate('/aboutsite')}; 
+  const goToAbout = () => { navigate('/about')}; 
   const goToLibrary = () => { navigate('/library')}; 
   const goToResources = () => { navigate('/resources')}; 
   const goToLetters = () => {navigate('/letters')};
